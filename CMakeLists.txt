@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(okvis_ros)
 
+set(CMAKE_CXX_STANDARD 14)		
+
 find_package(catkin REQUIRED  
   pcl_conversions
   pcl_ros
@@ -107,6 +109,6 @@ add_executable(okvis_node src/okvis_node.cpp )
 target_link_libraries(okvis_node ${PROJECT_NAME} )
 add_executable(okvis_node_synchronous src/okvis_node_synchronous.cpp)
 target_link_libraries(okvis_node_synchronous ${PROJECT_NAME} )
-add_executable(dataset_convertor src/dataset_convertor.cpp)
-target_link_libraries(dataset_convertor ${PROJECT_NAME} )
-
+#Dataset convertor is not needed
+#add_executable(dataset_convertor src/dataset_convertor.cpp)
+#target_link_libraries(dataset_convertor ${PROJECT_NAME} )
