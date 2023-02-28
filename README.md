@@ -6,6 +6,7 @@ Tested on Ubuntu 20.04 ROS Noetic with OpenCV 4.2
 
 In case of build errors check [troubleshooting](/troubleshooting.md)
 
+====
 Welcome to OKVIS: Open Keyframe-based Visual-Inertial SLAM. 
 
 This is the Author's implementation of the [1] and [3] with more results in [2].
